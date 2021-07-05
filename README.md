@@ -37,6 +37,8 @@ By analyzing this carry over effect, marketers get to know about the purchase fr
 
 # The adstock function attempts to parameterize this phenomenon
 
+adstock is the cumulative value of a brand’s advertising at a given point in time
+
 # Customer retention rate 
 It is the percentage of initial customers who continue to purchase the same product of a particular brand. More the number of repeated visits by the customer; more is the rate of retention.
 
