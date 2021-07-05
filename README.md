@@ -2,6 +2,7 @@
 
 
 
+
 <p align="center">
   
   <img src="https://github.com/Ganesh9100/Media-Mix-Model--02/blob/main/MMM.png" width="600" height = "800" title="hover text">
@@ -56,3 +57,9 @@ In out case :: After a certain saturation point, increasing spend will yield dim
 # The hill function function attempts to parameterize this phenomenon
 
 
+
+
+# Reference Blog - Thanks to the author Sibyl He
+
+
+https://towardsdatascience.com/python-stan-implementation-of-multiplicative-marketing-mix-model-with-deep-dive-into-adstock-a7320865b334
