@@ -10,6 +10,53 @@
 </p>
 
 
+
+
+
+
+
+
+
+  # 2.1 Control Model / Base Sales Model
+  
+<b>Goal: predict base sales (X_ctrl) as an input variable to MMM, this represents the baseline sales trend without any marketing activities.</b>
+  
+
+  <b>X1:</b> control variables positively related to sales, including macro economy, store count, markdown, holiday.
+  
+  <b>X2:</b> control variables that may have either positive or negtive impact on sales: seasonality.
+  
+  <b>Target variable:</b> ln(sales).
+  
+The variables are centralized by mean.
+
+# 2.2 Marketing Mix Model
+  <b>Goal:</b>
+- Find appropriate adstock parameters for media channels;
+- Decompose sales to media channels’ contribution (and non-marketing contribution).
+
+L: length of media impact
+P: peak of media impact
+D: decay of media impact
+X: adstocked media impression variables and base sales
+  <b>Target variable:</b> ln(sales)
+Variables are centralized by means
+  
+  
+  
+  
+# 2.3 Diminishing Return Model
+  <b>Goal:</b> for each channel, find the relationship (fit a Hill function) between spending and contribution, so that ROAS and marginal ROAS can be calculated.
+
+x: adstocked media channel spending
+K: half-saturation point
+S: shape
+  <b>Target variable:</b> the media channel’s contribution
+Variables are centralized by means.
+
+
+
+
 # media variables 
 <b>online</b>
 (display ads, websites, blogging, social media, e-mail
@@ -71,44 +118,6 @@ In out case :: After a certain saturation point, increasing spend will yield dim
 
 
 
-
-
-  # 2.1 Control Model / Base Sales Model
-  
-<b>Goal: predict base sales (X_ctrl) as an input variable to MMM, this represents the baseline sales trend without any marketing activities.</b>
-  
-
-  <b>X1:</b> control variables positively related to sales, including macro economy, store count, markdown, holiday.
-  
-  <b>X2:</b> control variables that may have either positive or negtive impact on sales: seasonality.
-  
-  <b>Target variable:</b> ln(sales).
-  
-The variables are centralized by mean.
-
-# 2.2 Marketing Mix Model
-  <b>Goal:</b>
-- Find appropriate adstock parameters for media channels;
-- Decompose sales to media channels’ contribution (and non-marketing contribution).
-
-L: length of media impact
-P: peak of media impact
-D: decay of media impact
-X: adstocked media impression variables and base sales
-  <b>Target variable:</b> ln(sales)
-Variables are centralized by means
-  
-  
-  
-  
-# 2.3 Diminishing Return Model
-  <b>Goal:</b> for each channel, find the relationship (fit a Hill function) between spending and contribution, so that ROAS and marginal ROAS can be calculated.
-
-x: adstocked media channel spending
-K: half-saturation point
-S: shape
-  <b>Target variable:</b> the media channel’s contribution
-Variables are centralized by means.
 # Reference Blog - Thanks to the author Sibyl He
 
 
