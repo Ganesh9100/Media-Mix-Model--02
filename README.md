@@ -10,13 +10,11 @@
 </p>
 
 
-
-
-we have media variables 
-# online
+# media variables 
+<b>online</b>
 (display ads, websites, blogging, social media, e-mail
 marketing and pay-per-click advertising (PPC)) or/and
-# offline 
+<b>offline</b>
 (television, radio, newspaper print collateral) – and
 
 # control variables,
@@ -30,22 +28,22 @@ accounts for the external factors affecting sales
 # Carry-over-effect :
 Carryover effects, often called lagged effects,
 For example-1 , if we spend $100 on display advertising today, we may not see the effects of this spend for several days.
+
 Example - 2 :  if we spend in TV add for 1 month to sell Hamam Soap then this ad will be able to carryover for some N months so that after that N months we will have to updated the add to make the carryover.
 
 By analyzing this carry over effect, marketers get to know about the purchase frequency and spending pattern of the customers
 
-
-# The adstock function attempts to parameterize this phenomenon
+<b>The adstock function attempts to parameterize this phenomenon</b>
 
 adstock is the cumulative value of a brand’s advertising at a given point in time
-
-# Customer retention rate 
+<br>
+<b>Customer retention rate</b> 
 It is the percentage of initial customers who continue to purchase the same product of a particular brand. More the number of repeated visits by the customer; more is the rate of retention.
 
-# Customer decay rate:
+<b>Customer decay rate:</b>
 It is the percentage of initial customers who don’t turn up for repurchase. If less number of customers repurchases the products, the marketer is incapable of holding the consumer to the brand
 
-# carryover effect also have another meaning :: It is the difference between customer retention rate and customer decay rate 
+<b>carryover effect also have another meaning</b> :: It is the difference between customer retention rate and customer decay rate 
 
 
 # Diminishing Returns
@@ -56,11 +54,65 @@ He started from 1 unit of fertilizer then followed by 2 , 3 ,4 he gets much more
 
 In out case :: After a certain saturation point, increasing spend will yield diminishing marginal return, the channel will be losing efficiency as you keep overspending on it.
 
-# The hill function function attempts to parameterize this phenomenon
+<b>The hill function function attempts to parameterize this phenomenon</b>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+  # 2.1 Control Model / Base Sales Model
+  
+<b>Goal: predict base sales (X_ctrl) as an input variable to MMM, this represents the baseline sales trend without any marketing activities.</b>
+  
+
+  <b>X1:</b> control variables positively related to sales, including macro economy, store count, markdown, holiday.
+  
+  <b>X2:</b> control variables that may have either positive or negtive impact on sales: seasonality.
+  
+  <b>Target variable:</b> ln(sales).
+  
+The variables are centralized by mean.
+
+# 2.2 Marketing Mix Model
+  <b>Goal:</b>
+- Find appropriate adstock parameters for media channels;
+- Decompose sales to media channels’ contribution (and non-marketing contribution).
+
+L: length of media impact
+P: peak of media impact
+D: decay of media impact
+X: adstocked media impression variables and base sales
+  <b>Target variable:</b> ln(sales)
+Variables are centralized by means
+  
+  
+  
+  
+  
+  2.3 Diminishing Return Model
+  <b>Goal:</b> for each channel, find the relationship (fit a Hill function) between spending and contribution, so that ROAS and marginal ROAS can be calculated.
+
+x: adstocked media channel spending
+K: half-saturation point
+S: shape
+  <b>Target variable:</b> the media channel’s contribution
+Variables are centralized by means.
 # Reference Blog - Thanks to the author Sibyl He
 
 
