@@ -2,6 +2,15 @@
 
 
 
+<p align="center">
+  
+  <img src="https://github.com/Ganesh9100/Media-Mix-Model--02/blob/main/MMM.png" width="600" height = "800" title="hover text">
+  
+</p>
+
+
+
+
 we have media variables 
 # online
 (display ads, websites, blogging, social media, e-mail
