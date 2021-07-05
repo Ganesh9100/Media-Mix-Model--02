@@ -73,9 +73,6 @@ In out case :: After a certain saturation point, increasing spend will yield dim
 
 
 
-
-
-<p>
   # 2.1 Control Model / Base Sales Model
   
 <b>Goal: predict base sales (X_ctrl) as an input variable to MMM, this represents the baseline sales trend without any marketing activities.</b>
@@ -104,8 +101,7 @@ Variables are centralized by means
   
   
   
-  
-  2.3 Diminishing Return Model
+# 2.3 Diminishing Return Model
   <b>Goal:</b> for each channel, find the relationship (fit a Hill function) between spending and contribution, so that ROAS and marginal ROAS can be calculated.
 
 x: adstocked media channel spending
