@@ -1,2 +1,34 @@
 # No of columns 
 # No of rows 
+
+
+# 1. media variables
+
+    media impression
+    mdip_cols= 'mdip_'
+
+    media spending
+    mdsp_cols = 'mdsp_' 
+
+
+# 2. control variables
+
+    macro economics variables
+    me_cols = 'me_'
+    
+    # store count variables
+    st_cols = ['st_ct']
+    
+    # markdown/discount variables
+    mrkdn_cols ='mrkdn_'
+    
+    # holiday variables
+    hldy_cols ='hldy_'
+    
+    # seasonality variables
+    seas_cols ='seas_'
+
+base_vars = me_cols+st_cols+mrkdn_cols+hldy_cols+seas_cols
+
+# 3. sales variables
+    sales_cols =['sales']
