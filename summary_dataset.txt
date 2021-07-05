@@ -1,34 +1,46 @@
-# No of columns 
-# No of rows 
+# No of columns  - 80 
+# No of rows    - 209
 
 
-# 1. media variables
+1. Media Variables  ( 13 + 10 ) = 23 features 
 
-    media impression
-    mdip_cols= 'mdip_'
+- Media Impression (prefix=’mdip_’):impressions of 13 media channels
 
-    media spending
-    mdsp_cols = 'mdsp_' 
+: direct mail, insert, newspaper, digital audio, radio, TV, digital video, social media, online display, email, SMS, affiliates, SEM.
+
+- Media Spending (prefix=’mdsp_’): spending of media channels.( 10 ) 
 
 
-# 2. control variables
+2. Control Variables ( 2 + 2 + 1 + 22 + 19 ) = 46 
+- Macro Economy (prefix=’me_’): CPI, gas price. ( 2 ) 
+ 
+- Markdown (prefix=’mrkdn_’): markdown/discount.( 2 ) 
 
-    macro economics variables
-    me_cols = 'me_'
-    
-    # store count variables
-    st_cols = ['st_ct']
-    
-    # markdown/discount variables
-    mrkdn_cols ='mrkdn_'
-    
-    # holiday variables
-    hldy_cols ='hldy_'
-    
-    # seasonality variables
-    seas_cols ='seas_'
+- Store Count (‘st_ct’) ( 1 )
 
-base_vars = me_cols+st_cols+mrkdn_cols+hldy_cols+seas_cols
+- Retail Holidays (prefix=’hldy_’): one-hot encoded. ( 22 )
 
-# 3. sales variables
-    sales_cols =['sales']
+- Seasonality (prefix=’seas_’): month, with Nov and Dec broke into weeks. One-hot encoded. ( 19 ) 
+
+
+
+
+3. Sales Variable (‘sales’) ( 1 ) 
+
+23 + 46 + 1 = 70 
+
+
+
+# Model 1 Summary Data
+
+{'K1': 27,
+ 'K2': 19,
+ 'N': 209 } 
+ 
+ K1 = X1 = 27  # variables positively related to sales: macro economy, store count, markdown, holiday
+ 
+ ['me_ics_all', 'me_gas_dpg', 'st_ct', 'mrkdn_valadd_edw', 'mrkdn_pdm', 'hldy_Black Friday', 'hldy_Christmas Day', 'hldy_Christmas Eve', 'hldy_Columbus Day' , hldy_Cyber Monday', 'hldy_Day after Christmas','hldy_Easter',"hldy_Father's Day",'hldy_Green Monday','hldy_July 4th','hldy_Labor Day','hldy_MLK','hldy_Memorial Day',"hldy_Mother's Day",'hldy_NYE',"hldy_New Year's Day",'hldy_Pre Thanksgiving','hldy_Presidents Day','hldy_Prime Day','hldy_Thanksgiving',"hldy_Valentine's Day",'hldy_Veterans Day']
+ 
+ 
+ K2 = X2 = 19 # variables may have either positive or negtive impact on sales: seasonality
+ ['seas_prd_1','seas_prd_2','seas_prd_3','seas_prd_4','seas_prd_5','seas_prd_6','seas_prd_7','seas_prd_8','seas_prd_9','seas_prd_12','seas_week_40','seas_week_41','seas_week_42','seas_week_43','seas_week_44','seas_week_45','seas_week_46','seas_week_47','seas_week_48']
