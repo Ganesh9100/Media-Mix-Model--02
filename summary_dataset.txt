@@ -44,3 +44,34 @@
  
  K2 = X2 = 19 # variables may have either positive or negtive impact on sales: seasonality
  ['seas_prd_1','seas_prd_2','seas_prd_3','seas_prd_4','seas_prd_5','seas_prd_6','seas_prd_7','seas_prd_8','seas_prd_9','seas_prd_12','seas_week_40','seas_week_41','seas_week_42','seas_week_43','seas_week_44','seas_week_45','seas_week_46','seas_week_47','seas_week_48']
+
+
+
+
+
+
+Model 2 
+
+# mu_mdip = mean of  Media Variables(13 columns)  - shape (13,1)  
+# max_lag = 8
+# num_media = len(mdip_cols)   Media Variables - 13 
+ 
+# padding zero * (max_lag-1) rows
+# X_media = padding the 13 columns of media variables with zero value 
+
+    after padding shape is (216, 13)
+    before padding shape is (209, 13)
+    
+    
+# X_ctrl = # output of model 1 ( base_model )
+
+# model_data2 = {
+#     'N': len(df), -->209
+#     'max_lag': max_lag, 
+#     'num_media': num_media,--> 13
+#     'X_media': X_media, --> padded matrix of 13 media variables 
+#     'mu_mdip': mu_mdip, --> 13 ( mean of 13 columns )
+#     'num_ctrl': X_ctrl.shape[1],  ---> len  output of model 1 ( control model ) 
+#     'X_ctrl': X_ctrl, ----> output of model 1 ( control model ) 
+#     'y': df_mmm['sales'].values
+# }
