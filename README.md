@@ -121,7 +121,14 @@ In out case :: After a certain saturation point, increasing spend will yield dim
 
 
 
-# Reference Blog - Thanks to the author Sibyl He
+
+# Reference Blog -
+
+https://towardsdatascience.com/market-mix-modeling-mmm-101-3d094df976f9 Thanks to the author @https://ridhima-kumar0203.medium.com/
+
+
 
 
 https://towardsdatascience.com/python-stan-implementation-of-multiplicative-marketing-mix-model-with-deep-dive-into-adstock-a7320865b334
+
+Thanks to the author @Sibyl He
