@@ -8,6 +8,7 @@
 
 : direct mail, insert, newspaper, digital audio, radio, TV, digital video, social media, online display, email, SMS, affiliates, SEM.
 
+
 - Media Spending (prefix=’mdsp_’): spending of media channels.( 10 ) 
 
 
