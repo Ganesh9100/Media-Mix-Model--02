@@ -26,6 +26,7 @@
   
   <b>X2:</b> control variables that may have either positive or negtive impact on sales: seasonality.
   
+  
   <b>Target variable:</b> ln(sales).
   
 The variables are centralized by mean.
@@ -39,6 +40,7 @@ L: length of media impact
 P: peak of media impact
 D: decay of media impact
 X: adstocked media impression variables and base sales
+
   <b>Target variable:</b> ln(sales)
 Variables are centralized by means
   
@@ -51,6 +53,7 @@ Variables are centralized by means
 x: adstocked media channel spending
 K: half-saturation point
 S: shape
+
   <b>Target variable:</b> the media channel’s contribution
 Variables are centralized by means.
 
